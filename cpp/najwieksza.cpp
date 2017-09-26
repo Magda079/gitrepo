@@ -17,22 +17,13 @@ int main(int argc, char **argv)
     cin >> a >> b >> c;
     if (a > b) 
     {
-        
         if (a > c) cout << "Największe jest a!";
         else cout << "Największe jest c!";
     }
-          {
-            
-        
-            }; //a większe od b 
-        
-         
-        
-        else
-         {
-             ; // a nie jest większe od b 
-             
-             }
+    else
+    {
+       ; // a nie jest większe od b 
+    }
         
    
          
