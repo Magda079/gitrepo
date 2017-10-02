@@ -9,22 +9,16 @@
 using namespace std;
 
 int main(int argc, char **argv)
+
+
 {
-    int i;
-    int j;
-    
-    for (i = 1; i < 101; i++ )
-    {//umieszczamy blok kodu , który ma powtarzać
-        cout << "*" ; 
-        if (i % 10 == 0 ) 
-        {
-            for (j = 0 ; j < 9; j++)
-                cout << "#";
-            cout << endl; 
-        }
-    }
 
-    
-    return 0;
+    int suma =0;
+
+    for (int i=10; i<=20; i++) suma = suma +i;
+
+        cout << suma;
+
+return 0;
+
 }
-
