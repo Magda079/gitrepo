@@ -12,13 +12,20 @@ int main(int argc, char **argv)
 
 
 {
+    int i;
+    int suma = 0;
+    int liczba = 0;
 
-    int suma =0;
-
-    for (int i=10; i<=20; i++) suma = suma +i;
-
-        cout << suma;
-
+    for (int i = 0; i < 10; i++) ;
+    
+       {
+        cout << "Podaj liczbę : ";
+        cin >> liczba;
+        suma += liczba;
+       }
+       
+       cout << "Suma liczb: " << suma << endl;
+       
 return 0;
 
 }
