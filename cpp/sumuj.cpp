@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     int suma = 0;
     int liczba = 0;
 
-    for (int i = 0; i < 10; i++) ;
+    for (int i = 0; i < 10; i++) 
     
        {
         cout << "Podaj liczbę : ";
