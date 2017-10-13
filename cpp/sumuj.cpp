@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 
 
 {
-    int i;
+    
     int suma = 0;
     int liczba = 0;
 
