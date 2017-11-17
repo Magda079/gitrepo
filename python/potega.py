@@ -4,14 +4,27 @@
 #  potega.py
 #  
 
+def potega(a,b):
+    wynik = 1
+    while b > 0:
+        wynik = a ** b
+    return wynik
 
 
 def main(args):
     a=int(input('Podaj podstawę'))
     b=int(input('Podaj wykładnik'))
     
-    while b < 0:
-        wynik a ** b 
+    assert type(a) == int
+    assert type(b) == int
+    
+    #while b < 0:
+        #wynik = a ** b 
+        
+    assert potega (0) == 0
+    assert potega (1) == 1
+    assert potega (2) == 2
+    assert potega (3) == 9
         
     print ( a ** b )
     return 0
