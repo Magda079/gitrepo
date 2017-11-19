@@ -23,8 +23,8 @@ def main(args):
     assert silnia_it(1) == 1
     assert silnia_it(2) == 2
     assert silnia_it(3) == 6
-    #print('Silnia dla {:d}: {:d}'.format(n,silnia_it))
-
+    #  print('Silnia dla {:d}: {:d}'.format(n,silnia_it))
+    print (a ** b)
     return 0
 
 if __name__ == '__main__':

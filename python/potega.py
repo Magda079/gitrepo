@@ -12,18 +12,18 @@ def potega(a,b):
 
 
 def main(args):
-    a=int(input('Podaj podstawę'))
-    b=int(input('Podaj wykładnik'))
+    a=int(input('Podaj podstawę '))
+    b=int(input('Podaj wykładnik '))
     
-    assert type(a) == int
-    assert type(b) == int
+    assert type (a) == int
+    assert type (b) == int 
     
     #while b < 0:
         #wynik = a ** b 
-        
+   
     assert potega (0) == 0
     assert potega (1) == 1
-    assert potega (2) == 2
+    assert potega (2) == 4
     assert potega (3) == 9
         
     print ( a ** b )
