@@ -3,7 +3,8 @@
 #
 #  nwd.py
 #  
-#  znaleźć największy wspólny dzielnik swóch liczb naturalnych całkowitych , która znajdzie za pomoca pętli NWD... euklidesa klasyczny oparty na odejmowaniu
+#  znaleźć największy wspólny dzielnik swóch liczb naturalnych całkowitych ,
+#  która znajdzie za pomoca pętli NWD... euklidesa klasyczny oparty na odejmowaniu
 
 def nwd(a,b):
     while a!=b:
