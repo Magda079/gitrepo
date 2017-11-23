@@ -16,7 +16,7 @@ def losuj(ileliczb, maksliczb):
         if liczby.count(liczba) == 0:
             liczby.append(liczba)
             ile += 1
-    print(lista)
+    #  print(lista)
     return liczby
     
 def minimum(lista):
@@ -27,8 +27,9 @@ def minimum(lista):
     return 0
 
 def main(args):
-    lista = losuj(20,50)
+    lista = losuj(20, 50)
     print("Min: ", minimum(lista))
+    print(lista)
     return 0
 
 if __name__ == '__main__':
