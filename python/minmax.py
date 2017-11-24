@@ -22,13 +22,25 @@ def losuj(ileliczb, maksliczb):
 def minimum(lista):
     #  wyszukiwanie minimum
     min = lista[0]
+    #  for i, el in enumerate(lista):
+    for el in lista:
+        if el < min :
+            min = el
+    return min
+    
+def maksimum(lista):
+    max = lista[0]
     for i, el in enumerate(lista):
-        print(i,el)
-    return 0
-
+        if el > max:
+            max = el
+    return max
+        
 def main(args):
-    lista = losuj(20, 50)
+    lista = losuj(10, 50)
+    assert minimum ([7,5,2,1,2]) == 1
+    assert maksimum ([7,5,2,1,2]) == 7
     print("Min: ", minimum(lista))
+    print("Max: ", maksimum(lista))
     print(lista)
     return 0
 
