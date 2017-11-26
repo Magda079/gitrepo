@@ -3,41 +3,55 @@
  */
 
 
+
+
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
-
-
-int main(int argc, char** argv) {
-   
-    int n;
-    int tab[100];
+int main()
+{
+    srand( time( NULL ) );
+    int tab[ 6 ];
+    int x;
+    int min, max;
  
-   cout<<"Podaj liczbe n: ";
-   cin>>n;
-    
-    for (int i=1;i<=n;i++)
+    cout << "Wylosowane liczby: " << endl << endl;
+    for( int i = 0; i < 6; i++ )
     {
-        tab[i]=i;
-    }
-  
-    int min=tab[1];
-    int max=tab[1];
-    
-    for(int i=1;i<=n;i++)
+        do
         {
-        if(tab[i]<min)
-            {
-                min=tab[i];
-            }
-
-        if(tab[i]>max)
-            {
-                max=tab[i];
-            }
+            x =( rand() % 49 ) + 1;
         }
-    
-    cout<<"Wartosc minimalna to: "<<min<<endl;
-    cout<<"Wartosc maksymalna to: "<<max<<endl;
-
+        while(( tab[ 0 ] == x )||( tab[ 1 ] == x )||( tab[ 2 ] == x )||( tab[ 3 ] == x )||( tab[ 4 ] == x )||( tab[ 5 ] == x ) );
+ 
+        tab[ i ] = x;
+ 
+        cout << tab[ i ] << " ";
+    }
+ 
+     min = tab[0];
+ 
+    for(int i=0; i<6; i++)
+    {
+        if(min>tab[i])
+        {
+            min = tab[i];
+        }
+    }
+ 
+    max = tab[0];
+ 
+    for(int i=0; i<6; i++)
+    {
+        if(max<tab[i])
+        {
+            max = tab[i];
+        }
+    }
+    cout<<endl;
+    cout<<"najmniejsza liczba to: "<<min<<endl;
+    cout<<"najwieksza liczba to: "<<max<<endl;
     return 0;
 }
+ 
