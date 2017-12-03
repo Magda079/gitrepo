@@ -13,13 +13,12 @@ using namespace std;
 
 float horner_it(int k, float tbwsp[], float x){
         int i;
-        float wynik = tbwap[0];
+        float wynik = tbwsp[0];
         for (i= 1; i < k + 1; i++){
             wynik = wynik * x + tbwsp[i];
             }
-        return wynik
-    
-}
+        return wynik;
+    }
 
 int main(int argc, char **argv)
 {
