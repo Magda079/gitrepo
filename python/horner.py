@@ -5,23 +5,23 @@
 #  
 
 
-def horner_it(stopien, tb, x):
-	wynik = tb[0]
+def horner_it(stopien, tbwsp, x):
+	wynik = tbwsp[0]
 	for i in range(1, stopien + 1):
-		wynik = wynik * x + tb[i]
+		wynik = wynik * x + tbwsp[i]
 	
 	return wynik
 
 
 def main(args):
-	tb = []
+	tbwsp = []
 	stopien = 3
 	x = int(input("Podaj wartośc x: "))
 	for i in range(0, 4):		
 		tmp = int(input("Podaj współczynniki: "))
-		tb.append(tmp)
+		tbwsp.append(tmp)
 		
-	print("Wynik: ", horner_it(stopien, tb, x))
+	print("Wynik: ", horner_it(stopien, tbwsp, x))
 	return 0
 
 if __name__ == '__main__':
