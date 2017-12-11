@@ -23,6 +23,13 @@ def fib_iter2(n):
         a, b = b, a + b
         print()
 
+#  fib_rek(n) = 1 dla n {0, 1}
+#  fib_rek(n) = fib_rek(n - 1) + fib_rek(n - 2) dla n > 1
+def fib_rek(n):
+    if n < 2:
+        return 1
+    return fib_rek(n - 1) + fib_rek(n - 2)
+
 
 def main(args):
     #  n = int(input('Podaj wyraz ciągu: '))
@@ -30,7 +37,7 @@ def main(args):
     #  assert fib_iter(1) == 1
     #  assert fib_iter(2) == 1
     #  assert fib_iter(5) == 5
-    print("Wyraz {:d} = {:d}".format(20, fib_iter(20)))
+    print("Wyraz {:d} = {:d}".format(20, fib_rek(20)))
     return 0
 
 
