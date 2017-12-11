@@ -29,14 +29,14 @@ int main(int argc, char **argv)
                 b = b - a;
             };
         }
-        while( a != b );
+        while ( a != b );
        
     }
-    cout << "NWD = " << a << endl;
+    
    
     licznik = licznik / a;
     mianownik = mianownik / a;
-    cout << licznik << "/" << mianownik << endl;
+    cout <<"Skrócony ułamek: "<< licznik << "/" << mianownik << endl;
     
     
 	return 0;

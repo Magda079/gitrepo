@@ -10,20 +10,22 @@ using namespace std;
 int main()
 {
     int suma, ile, wplata;
-    cout << "Wprowadz ilosc wplat:\n";
-    cin >> ile;
     wplata = 100;
     suma = 0;
     int i;
+    
+    cout << "Wprowadz ilosc wplat: ";
+    cin >> ile;
+    
     for(i =0; i<ile; i++) 
     {
-    suma += wplata;
-    wplata +=  10;
+    suma = wplata + suma;
+    wplata = 10 + wplata;
 
     }
     
-    cout << "\nOstatnia wplata wyniosla: " << wplata-10;
-    cout << "\nStan konta: " << suma << "\n";
+    cout << "Ostatnia kwota wpłaty: " << wplata-10 << endl;
+    cout << "Stan konta: " << suma << endl;
     
     return 0;
 }
