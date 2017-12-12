@@ -10,7 +10,8 @@ using namespace std;
  
 void fibonacci(int n)
 {    
-     long long a = 0, b = 1;
+     int a = 0;
+     int b = 0;
  
      for(int i=0;i<n;i++)
      {
@@ -18,6 +19,14 @@ void fibonacci(int n)
             b += a; //pod zmienną b przypisujemy wyraz następny czyli a+b
             a = b-a; //pod zmienną a przypisujemy wartość zmiennej b
      }     
+}
+int fib_rek(int n)
+{
+    if (n < 2)
+        return 1;
+    else
+        return fib_rek(n - 1) + fib_rek(n - 2);
+    
 }
  
 int main()
@@ -28,7 +37,7 @@ int main()
     cin>>n;
  
     fibonacci(n);
- 
+    fib_rek(n);
     return 0;
 }
 
