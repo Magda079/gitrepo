@@ -10,7 +10,8 @@ def horner_it(stopien, tbwsp, x):
 	for i in range(1, stopien + 1):
 		wynik = wynik * x + tbwsp[i]
 	
-	return wynik
+	return wynik\
+    
 
 
 def main(args):
