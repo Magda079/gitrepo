@@ -15,7 +15,7 @@ int main(int argc, char **argv)
     cout << "Podaj bok: " << endl;
     
 	cin >> bok;
-    cout << "Obwód " << 4 * bok << endl 
+    cout << "Obwod " << 4 * bok << endl 
          << "Pole: " << bok * bok << endl; 
         
     
