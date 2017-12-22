@@ -33,9 +33,9 @@ def sort_wyb(tab, n):
 def main(args):
     ile = 10
     tab = [ile]
-    max = int(input("Jaka maksymalna liczbe chcesz wlozyc do tabeli: "))
-    print("Tabela przed sortowaniem: ", wypelnij(tab, ile, max))
-    print("Tabela po sortowaniu: ", sort_wyb(tab, ile))
+    max = int(input("Maksymalna liczba do tabeli: "))
+    print("Tabela: ", wypelnij(tab, ile, max))
+    print("Sortowanie: ", sort_wyb(tab, ile))
 
     
     return 0

@@ -1,5 +1,5 @@
 /*
- * sort_babel.cpp
+ * sort_bubble.cpp
  * 
  */
 
