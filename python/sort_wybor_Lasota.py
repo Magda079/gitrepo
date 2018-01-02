@@ -24,7 +24,8 @@ def sort_wyb(tab, n):
         j = i + 1
         for j in range(j, n + 1):
             if tab[j] < tab[k]:
-                tab[j], tab[k] = tab[k], tab[j]
+                k = j
+        tab[j], tab[k] = tab[k], tab[j]
     return tab
 
 
@@ -35,7 +36,7 @@ def main(args):
     tab = [ile]
     max = int(input("Maksymalna liczba do tabeli: "))
     print("Tabela: ", wypelnij(tab, ile, max))
-    print("Sortowanie: ", sort_wyb(tab, ile))
+    print("Sortowanie poprzez wybieranie : ", sort_wyb(tab, ile))
 
     
     return 0
