@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-11T11:59:28+01:00
+
+====== Home ======
+Created poniedziałek 11 grudzień 2017
+
+**alogrytmy rekurencyjne** można zaobserwować w strukturach geometrycznych polega na ciągłym powatrzaniu się 
+
+to sposób rozwiazywania probelmu za pomocą algorytmów 
+
+składa się z wartości brzegowej,początkowej...
+
+**właściwości algorytmów - **

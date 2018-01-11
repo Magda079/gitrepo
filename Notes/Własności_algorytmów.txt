@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-11T08:34:13+01:00
+
+====== Własności algorytmów ======
+Created czwartek 11 styczeń 2018
+
+=== Własności : ===
+1. Poprawność
+2. Skończoność
+3. Złożoność
+4. Efektywność 
+
+Ad.1
+
+== Poprawność : ==
+
+**Całkowicie poprawny algorytm** musi byc skończony.
+**Częściowo poprawne algorytmy** nie możemy dać wszystkich danych wyjściowych i wejściowych.
+
+**Dedukcja** – rodzaj rozumowania logicznego, mającego na celu dojście do określonego wniosku na podstawie założonego wcześniej zbioru przesłanek.
+**Dowodzenie indukcja**  -   założenie uniwersalnego wniosku, algorytm poprawny dla liczb naturalnych, wnioskowane z pojedynczych inforamcji 
+
+**Indukcja -** typ rozumowania redukcyjnego[1] określany jako wnioskowanie „od szczegółu do ogółu”, czyli wnioskowanie o prawdziwości racji (wniosków w szerokim znaczeniu tego słowa) z prawdziwości następstw (przesłanek w szerokim znaczeniu tego słowa), przy czym (w pewnych interpretacjach) typy indukcji bardziej złożone niż prosta indukcja enumeracyjna niezupełna stanowią rozumowania dedukcyjne.
+
+Ad.2 
+
+== Błędy : ==
+
+1. składniowe
+2. logiczne 
