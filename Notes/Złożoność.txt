@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-16T10:06:06+01:00
+
+====== Złożoność ======
+Created wtorek 16 styczeń 2018
+
+== algorytmy są zlożone : ==
+1. pamięciowo 
+2. czasowo 
+
+**Złożoność pamięciowa** (algorytmu polega na wykorzystywaniu jak najmniejszej ilosci pamięci) mówi jak duzo pamięci potrzebuje program do działania  bardziej zlozone pod tym względem sa algorytmy rekurencyjne.
+(Fukcja musi wywoływac sama siebie, podczas tego musi zapamiętać adres spod którego sie wywołuje [bo tworzona jest nowa funkcja]stan swoich aktualnych zmiennych)
+al rek sa bardziej złożone niż al iter.
+
+**Złożoność czasowa -**   nie bierzemy pod uwagę  czasu fizycznego wykonania algorytmu, a jak dużo operacji podstawowych wykonuje   (operacje podstawowe są to operacje najczęściej używane) .Chodzi o rząd wielkości ( funkcja liniowa ...f. kwadrfatowa .... funckaj silnia)

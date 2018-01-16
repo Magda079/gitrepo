@@ -8,11 +8,5 @@ Created poniedziałek 15 styczeń 2018
 Notacja wykładnicza : 
 e - wykladnik (e-17) przecinek przesunąć o 17 pozycji np 6,01e-17 czyli 0,0000000000.....601 
 
-== algorytmy są zlożone : ==
-pamięciowo 
-czasowo 
-
-**Złożoność pamięciowa** (algorytmu polega na wykorzystywaniu jak najmniejszej ilosci pamięci) mówi jak duzo pamięci potrzebuje program do działania  bardziej zlozone pod tym względem sa algorytmy rekurencyjne.
-
 
  
