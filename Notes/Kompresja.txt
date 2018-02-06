@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T10:29:19+01:00
+
+====== Kompresja ======
+Created wtorek 30 styczeń 2018
+
+Zmniejszanie ilości danych, żeby informacje istotne(!) zachować.
+
+Rodzaje:
+1. Stratna:
+-dźwięk = MP3, OGG
+-obraz = JPG, PNG
+- film = MPEG1,MPEG2,MPEG4, avi, mkv(MATROSKA)
+Jakość/Ilość kompresji zależy od przepływności: b/s, Kb/s, Mb/s,
+CBR
+
+[[DivX-]] do kodowania filmów i obrazów dawniej
+bitrate- przepływność
+
+Przykład argorytmu słownikowego:
+
+The rain in Spain falls mainly on the plain.
+The rain <3,3> Spa<9,4> falls ma<11,3> on t <34,3> pl<15 ,3>.
+44 bajty
+
+współczynnik kompresji 
+Rc=Vk / Vnk * 100
+100% - Rc
+ Rc 7.z = 170 
+Rc zip= 280

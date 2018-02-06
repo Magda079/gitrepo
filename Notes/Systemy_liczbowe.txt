@@ -48,3 +48,61 @@ system 16-stkowy
 
 ABC (16) = 10*16^2 + 11 * 16^1 + 12 
 
+**Konwersja liczby dziesietnej:**
+129/2= 64 reszty 1
+64/2=32 reszty 0
+32/2=16 reszty 0
+16/2=8 r 0
+8/2=4 r 0
+4/2=2 r 0
+2/2 =1 r 0
+1/2= 0 r 1 
+
+119/2=59 r 1 
+59/2 =29 r 1
+29/2 = 14 r 1
+14/2 = 7 r 0
+7/2  = 3 r 1
+3/2 =1 r 1
+1/2 = 0 r 1 
+
+
+1110111= 2^6+2^5+2^4+2^2+2^1+1=64+32+16+4+2+1=119 - 7 bitów
+
+Bity bardziej znaczące są to te z najwiekszą liczbą.
+
+
+119/8= 14 r 7 
+14/8 = 1 r 6
+1/8=0 r 1
+167= 119(8)
+
+
+119/16=7 r 7
+7/16= 0 r 7
+77= 119(16)
+
+Jezeli liczba binarną podzielisz od prawej po tyle ktora jest to potęga 2 (np. 8)
+potęgą więc robimy grupy 3 bitów zaczynając od bitów mniej znaczących
+czyli od prawiej strony i potraktujesz jako osobne cyfry utworzy liczbe dziesietna.
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
