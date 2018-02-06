@@ -7,9 +7,22 @@ def szyfruj_cezar(tekst, klucz):
     szyfrogram = ""
     for znak in tekst:
         znak = znak.upper()  # .lower też może być
-
+        ascii = ord(znak) + klucz  # kod ascii litery zastępującej
+        if ascii > 90:
+            ascii - 26
         szyfrogram += chr(ord(znak) + klucz)
     return szyfrogram
+
+
+def deszyfruj(szyfrogram, klucz):
+    tekst = ""
+    pass
+    return tekst
+
+
+# obsłużyc spacje
+# obsłużyć male i duże litery
+
 
 def main(args):
     tekst = input("Podaj tekst :")
@@ -17,6 +30,7 @@ def main(args):
 
     szyfrogram = szyfruj_cezar(tekst, klucz)
     print(szyfrogram)
+    print(deszyfruj(szyfrogram, klucz))
 
     return 0
 
