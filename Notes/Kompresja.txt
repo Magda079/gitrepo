@@ -5,27 +5,56 @@ Creation-Date: 2018-01-30T10:29:19+01:00
 ====== Kompresja ======
 Created wtorek 30 styczeń 2018
 
-Zmniejszanie ilości danych, żeby informacje istotne(!) zachować.
+Zmniejszanie rozmiaru czegoś w celu zachowania intotnych informacji
+kompresja to np odtwarzanie filmów itp
 
-Rodzaje:
-1. Stratna:
--dźwięk = MP3, OGG
--obraz = JPG, PNG
-- film = MPEG1,MPEG2,MPEG4, avi, mkv(MATROSKA)
-Jakość/Ilość kompresji zależy od przepływności: b/s, Kb/s, Mb/s,
-CBR
+Rodzaje kompresji
+1. Kompresja stratna 
+a) dżwięk - MP3, OGG(usunięte niesłyszalne dla ucha człowieka dźwieki )
+b) obraz - JPG, PNG
+c ) filmy - MPEG1,MPG2,MPG4, .avi, .mp4
 
-[[DivX-]] do kodowania filmów i obrazów dawniej
-bitrate- przepływność
+Jakość kompresji zależy od przepływości (Bit Rejt- ilość informacji w jednostce czasu ) b/s, Kb/s, Mb/s.  Komórki mają gorszą przepłyność
 
-Przykład argorytmu słownikowego:
+DivX - DO KODOWANIA FILMÓW I OBRAZÓW DAWNIEJ 
+Xvid - 
 
-The rain in Spain falls mainly on the plain.
-The rain <3,3> Spa<9,4> falls ma<11,3> on t <34,3> pl<15 ,3>.
-44 bajty
+Download-  przepływnośc w momencie pobierania informacji
+Upload- max przepływność
 
-współczynnik kompresji 
-Rc=Vk / Vnk * 100
+__Algorytm słownikowy__ 
+
+The rain in Spain falls mainly on the plain. 
+The rain <3,3> Sp<9, 4> falls m <11,3>ly on t< 34, 3 > pl<15,3>. 
+
+ <3- cofnij sie trzy znaki wcześniej,3- weź trzy znaki>
+
+6 bitów+2 bity = 8 bitów
+33 bajty / 44 bajty * 100 = ~ 75%
+
+Współczynnik kompresji
+
+Rc = Vk- wielkośc skompresowana / Vnk- nieskomresowana * 100
+100% - Rc — informacja o ile zmniejszył się kompresowany zbiór 
+
+Rc 7z=  218,4 kB /633,1 kB * 100 = 34,5 %
+
+Rc zip = 340,7 kB /633,1 kB * 100 = 54 %
+
+**Wzór ogólny na współczynnik kompresji :**
+
+Rc = Vk/Vnk*100 
 100% - Rc
- Rc 7.z = 170 
-Rc zip= 280
+
+Strimery  - 
+* archwium - kopia czegoś
+        
+**Rodzaje kompresji :** 
+ZIP 
+RAR
+7Z
+TAR(archiwizator taśm) - odpowiada za robienie archiwów oraz kompresuje 
+
+
+
+

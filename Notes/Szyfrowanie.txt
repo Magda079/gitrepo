@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-06T10:02:39+01:00
+
+====== Szyfrowanie ======
+Created wtorek 06 luty 2018
+
+Szyfr Cezara  
+proces szyfrowania polega na ukryciu danych (np.tekstu)(kryptografia)
+Otrzymujemy w ten sposób SZYFROGRAM
+Odczytanie ukrytej informacji to deszyfracja (kryptoanaliza)
+
+Kryptografia + kryptoanaliza  = kryptologia
+
+Do odszyfrowania szyfrogramu potrzebny jest :
+**algorytm szyfrowania** oraz **klucz** .
+
+
+== Rodzaje szyfrów ==
+**Podstawieniowe :**
+Szyfr Cezara
