@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# -*- coding: utf-    szyfrogram = ""
 
 
 def szyfruj_cezar(tekst, klucz):
@@ -16,7 +16,15 @@ def szyfruj_cezar(tekst, klucz):
 
 def deszyfruj(szyfrogram, klucz):
     tekst = ""
-    pass
+    for znak in szyfrogram:
+        ascii = ord(znak) - klucz
+        if ord(znak) == 32:
+            ascii = 32
+        if ascii > 90 and ascii < 97:
+            ascii -= 26
+        elif ascii > 122:
+            ascii -= 26
+        tekst += chr(ascii)
     return tekst
 
 
