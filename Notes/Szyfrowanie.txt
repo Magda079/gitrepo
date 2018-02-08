@@ -18,4 +18,8 @@ Do odszyfrowania szyfrogramu potrzebny jest :
 
 == Rodzaje szyfrów ==
 **Podstawieniowe :**
-Szyfr Cezara
+Szyfr Cezara, klucz to odległośc zastępnika
+
+**Przestawieniowe :** 
+Zapis tekstu w wierszach o ustalonej długości.
+Klucz to ilość kolumn, na które dzielimy tekst. 
