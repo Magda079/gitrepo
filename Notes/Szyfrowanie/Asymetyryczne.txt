@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-27T10:06:17+01:00
+
+====== Asymetyryczne ======
+Created wtorek 27 luty 2018
+
+szyfrowana wersja protokołu HTTPS 
+TLS -: 
+klucz publiczny  i klucz prywatny  nalezy wygenerować, sa nieodłączna parą. 
+
+**Klucz prywatny** możemy generowac sami.  
+**Klucz publiczny** po wygrenerowaniu możemy go udostepnić(znajomym, serwison, instytucjom) służy albo odczytać to co szyfrujemy kluczem prywatnym jeślli ktoś wysyła coś do nas szyfruje kluczem publicznym, alw my odbieramy prywatnym. 
+
+Pretty Good Privacy - narzędzie do szyfrowania poczty elektronicznej. 
+
+Najlpopularniejszym algorytmem do generowania kluczy jest algorytm RSA.
+
+Algorytm RSA opiera się na parach duzych liczb pierwszych. 
+
+Podpis elektroniczny jest mozliwy, jeżli 
+Urzędy certyfikacji - instytucja generujaca klucze prywatne i publiczne w czyimś  imieniu  i wystawia certyfikat. 
+Klucz publiczny i prywatny nie wystepuja w postaci jawnej, najczęściej sa zakaszowane za pomoca funkcji skrótu. 
+
+Funkcja skrótu - przyporządkowuje dowolnej liczbie , liczbę krótką posidający stały rozmiar. Ma zagwarantować, że nie ma dwóch takich samych wiadomości o tej samej liczbie.  
+Najczęściej wykorzystywane : 
+CRC 
+MD5 
+SHA 
