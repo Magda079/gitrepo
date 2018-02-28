@@ -1,0 +1,42 @@
+----------------------------------------------------
+SZYFR CEZARA
+----------------------------------------------------
+M A G D A   L A S O T A
+P D J G D   O D	V R W D
+
+8.12.2000 SANDOMIERZ (OSMY.DWUNASTY.DWUTYSIECZNY)
+RVPB.GZXQDVWB.GZDWBVLHFCQB VDQGRPLHUC
+
+----------------------------------------------------
+SZYFR CEZARA-POLSKIE ZNAKI
+----------------------------------------------------
+M A G D A   L A S O T A
+O C J F C   N C U R Y C
+
+8.12.2000 SANDOMIERZ (”SMY.DWUNASTY.DWUTYSI CZNY)
+SUOØ.FèZ”CUYØ.FèZYèULHEA”Ø UC”FROLGTA
+
+----------------------------------------------------
+SZYFR PRZESTAWIONIOWY
+----------------------------------------------------
+MAGDA  LASOTA (MA GD A | LA SO TA)
+AMDG A  ALOSAT
+
+8.12.2000 SANDOMIERZ (”S MY. DW UN AS TY.DW UT YS IE CZ NY  SA ND OM IE RZ)
+S”YM.WDNUSAYT.WDTUSYEIZCYN  ASDNMOEIZR
+
+
+----------------------------------------------------
+SZYFR VEIGENERE
+----------------------------------------------------
+M A G D A   L A S O T A  KLUCZ:INFO
+I N F O I   N F O I N F
+
+UNLRI YFGWGF
+
+8.12.2000 SANDOMIERZ (OSMY.DWUNASTY.DWUTYSIECZNY) KLUCZ:ROK
+
+O S M Y.D W U N A S T Y.D W U T Y S I E C Z N Y  S A N D O M I E R Z
+R O K R O K R O K R O K R O K R O K R O K R O K  R O K R O K R O K R
+
+FGWP.RGLBKJHI.UKEKMCZSMQBI JOXUCWZSBQ
