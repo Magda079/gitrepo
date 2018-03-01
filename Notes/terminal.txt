@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-01T08:14:14+01:00
+
+====== terminal ======
+Created czwartek 01 marzec 2018
+
+~  "tylda" jest symbolem oznaczajacym katalog domowy 

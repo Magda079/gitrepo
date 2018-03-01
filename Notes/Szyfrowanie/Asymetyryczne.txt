@@ -14,7 +14,7 @@ klucz publiczny  i klucz prywatny  nalezy wygenerować, sa nieodłączna parą.
 
 Pretty Good Privacy - narzędzie do szyfrowania poczty elektronicznej. 
 
-Najlpopularniejszym algorytmem do generowania kluczy jest algorytm RSA.
+Najlpopularniejszym algorytmem do generowania kluczy jest algorytm RSA. RSA algorytm generowania. 
 
 Algorytm RSA opiera się na parach duzych liczb pierwszych. 
 
@@ -27,3 +27,6 @@ Najczęściej wykorzystywane :
 CRC 
 MD5 
 SHA 
+
+odcisk palca - ciąg wygenerowany przez pewne algorytmyu przy uzyciu funkcji skrótu (inaczej suma kontrolna)
+url - ścieżka dostępu do internetu
