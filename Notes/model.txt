@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-05T11:58:56+01:00
+
+====== model ======
+Created poniedziałek 05 marzec 2018
+
+Model von Neumanna :
+-jednostka arytmetyczno logiczna - jej funkcje spełnia w paktyce procesor 
+- procesor  - skałada się z rejetrów (maja różne przeznaczenie, ale nie zależnie od tego o jakim procesorze mówimy są pewne rejestry które występuja w każdym procesorze) 
+REJESTRY PROCESORA MUSZA PRZECHOWYWYAC : 
+instruckcje : 
+	 rejestry danych – do przechowywania danych całkowitoliczbowych, np. argumentów i wyników obliczeń,
+	rejestry adresowe – do przechowywania adresów i uzyskiwania dostępu do pamięci, wśród nich wyróżnić można rejestry segmentowe,
+	rejestry ogólnego zastosowania (ang. general purpose), będące połączeniem dwóch powyższych typów, czyli mogące przechowywać zarówno dane, jak i adresy,
+	rejestry zmiennoprzecinkowe – do przechowywania i wykonywania obliczeń na liczbach zmiennoprzecinkowych, z reguły znajdujące się w oddzielnym bloku funkcjonalnym procesora, zwanym koprocesorem (FPU),
+	rejestry stałych – przechowujące stałe, jedynie do odczytu,
+	rejestry wektorowe – przechowujące dane do jednoczesnego przetwarzania wielu danych przez instrukcje typu SIMD,
+	rejestry specjalne, określające stan wykonania, wśród nich wymienić można rejestr wskaźnika instrukcji, wskaźnik stosu, rejestr flag procesora,
+	   rejestry instrukcji – do przechowywania obecnie przetwarzanej instrukcji
+
+REJESTRY PROCESORÓW : 
+
+EAX – Accumulator (akumulator - jego pamięć wykorzystuje arytmometr; używa się go do przechowywania wyników wielu operacji)
+EBX – Base Register (rejestr bazowy - służy do adresowania)
+
+
+Magistrale : 
+- szyna sterująca - jednym z jej głównym zadań jest synchronizacja wszystkich zadan (nadaje rytm pracy wszystkim innym urządzeniom)
+- szyna adresowa - służy do przekazywania adresów fizycznych , z których jednostka centralna bedzie wykonywała odczyty lub realizowała zapis danych  
+- szyna danych - służy do przekazywania danych 
+
+
+
+pamięć : 
+1 . ROM (najbardziej niezawodny nośnik informacji o dużej gęstości zapisu.) ma oprogramowanie sprzetowe Fear Wear zawiera BIOS (podst system wyjścia i wejścia) 
+ROM - Read Only Memory (pamięć  tylko do odczytu ) 
+BIOS został zastąpiony UEFI różni sie tym że dodano tam obsługi myszki, interfejs graficzny, dodatkowe zabezpieczenia. (roszerzony BIOS)
+
+RAM  (pamięć o dostepie dowolnym) - podstawowy rodzaj pamięci cyfrowej. W każdym momencie mozna zażadać dostępu do dowolnego elementu tej pamięci 
+pamięć  RAM w momencie braku zasilania jest ciągle przechowywana i zasilana inaczej nie jest w stanie przechować niczego 
+
+ROM - jest zapisane raz na stałe 
+
+RAM jeśli napięcie od 3 do 5 to 1
+od 0,2V to 0 
+Do architekturty procesora musi byc dostosowana architektura 
