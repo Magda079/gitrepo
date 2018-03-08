@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-08T08:03:16+01:00
+
+====== Systemy Microsoft ======
+Created czwartek 08 marzec 2018
+
+Microsoft  DOS 
