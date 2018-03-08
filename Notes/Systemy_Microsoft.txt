@@ -5,4 +5,49 @@ Creation-Date: 2018-03-08T08:03:16+01:00
 ====== Systemy Microsoft ======
 Created czwartek 08 marzec 2018
 
-Microsoft  DOS 
+Microsoft  DOS -  system operacyjny stworzony przez firmę Microsoft na podstawie nabytego przez nią kodu źródłowego systemu QDOS (ang. Quick and Dirty Operating System) stworzonego przez Seattle Computers. Jest to wersja systemu operacyjnego DOS przeznaczona dla komputerów IBM-PC. 
+
+polecenie w DOS emulator
+dir - zawartość katalogu 
+dir/? przelączniki
+cd tmp - przjeście do katalogu 
+edit - edytor tekstu
+cd .. - na dysk c 
+edit config.ss 
+
+lewy ALT + pierwsza litera nazw u góry 
+
+plik ma miec rozszerzenie ". i trzy litery rozszerzenia mp. .txt. " 
+
+miał duże ograniczenia : 
+- nazwa plików mogła miec tylko 8 znaków
+- obsługas pamięci (mógł obsłuzyc 640 KB pamięci )
+- był systemem który działał w trybie 
+a) rzeczywistym procesora : miał bardzo duże ograniczenie, bo rejestry procesorów 16 bitowe
+b) wirtualny procesor  
+- umozliwiał prace jednemu użytkownikowi i wykonywał jedno zadanie w jednym momencie
+- największy rozmiar programu który mogł obsłużyc to 64 KB
+
+od czasów DOSa przyjęło sie nadawać plikom atrybuty 
+s - system
+r - tylko do odczytu
+h - ukryty
+
+
+Windows 3.1 - umozliwiał łączenie komputerów w siec lokalną. Duzy krok jesli chodzi o systemy microsoft, aby przerzucic ludzi na interfejs graficzny(pasek zadań itp.). Spopularyzował ikony.
+Pojawia się narzędzie do zarządzania systemem, programami. Obsługa myszką zamiast wpisywania poleceń. 
+Wprowadza pojęcie wielozadaniowości (można uruchomic kilka programów i działaja one obok siebie jednocześnie). Istnieje terminal - umozliwia przyłączanie do siebie drugiego kompputera. 
+
+Microsoft Windows 95 - zostały dopracowane technologie tj. 
+- DDE - dynamiczna wymiana danych (miedzy różnymi aplikacjami)
+- OLE  -  łączenie i osadzanie obietków  ()
+w pierwszej wersji bezużyteczny, poniewaz 
+- Twierdził że systemy trzeba rozwijac w dwóch liniach 
+NT - firmy 
+Desktop - dla zwykłego użytkownika 
+Pierwsza przeglądarka Netscape Navigator (1994) dominowała do końca lat 90. 
+Stworzył przegladarke Explorer - Microsoft 
+
+obsługa USB trafiła do Windowsa98 
+Poprawiono wiele rzeczy, ale system FAT32
+[[ActivX]] - uruchamia zewnetrzne wtyczki realisujące jakies zadania (źle napisane, bo dostawały sie przez to wirusy)
