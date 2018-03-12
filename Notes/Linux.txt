@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-12T11:54:37+01:00
+
+====== Linux ======
+Created poniedziałek 12 marzec 2018
+
+LINUX (nazwa tylko i wyłącznie jądro systemu) zostaje publicznie usdostępnione w 1993 r. Jądro coś co pośredniczy pomiedzy sprzętem a uzytkownikiem . 
+potrzebuje interfejsu aby z tego korzystać. Jeśli do powłoki dołożymy interfejs to dostajemy w miarę kompletny system - dystrybucja.
+W 1993 r pierwsza wersja Steckwere, a nastepnie Debian,Mint.  
+
+1. odznaczyc dyskietki
+2. wyłączyć dźwięk 
+3. PAE/NX
+
+iso - format instalacyjny 
+
+Pliki systemu Windows trafiają  do katalogu Windows (na partycji C)
+w systemie Win programy domyślnie instalowane są w  program files również na dysku C 
+W systemie Windows na dysku C tworzony jest katalog users 
+
+w Linuxie stosuje się partycje które sa oznaczane sa za pomoca litery , : oraz ; 
+[[/dev/sda/]] - pierwsza partycja dysku
+urządzenie/dysk 
+
+Systemy plików w każdym systemie  :
+
+Linux obsługuje kazdy system plikow 
+Windows zainstalowany na ntfs- brak ograniczenia
+
+Dawniej fat jako system plikow oparty na tablicy alokacji. mial duże ograniczenie 
+ext4 - udany system odporny na awarie 
+
+w Windows'ie ważna rzecza systemowa jest plik wymiary (duży plik tworzony w katalogu głownym )
+
+w Linux'ie  jest możliwośc tworzenia plikow wymiany.
+
+swap - partycja wymiany w Linux 
+
+gnom - (skrzat) srodowisko 3.2 ... 
+
+żeby zainstalowac Linuxa dwie partycje - główna, w ktorej montowany jest główny system (programy i jądro) oraz na dane uzytkownika ; trzecia - partycja wymiany 

@@ -50,4 +50,4 @@ Stworzył przegladarke Explorer - Microsoft
 
 obsługa USB trafiła do Windowsa98 
 Poprawiono wiele rzeczy, ale system FAT32
-[[ActivX]] - uruchamia zewnetrzne wtyczki realisujące jakies zadania (źle napisane, bo dostawały sie przez to wirusy)
+ActivX - uruchamia zewnetrzne wtyczki realisujące jakies zadania (źle napisane, bo dostawały sie przez to wirusy)
