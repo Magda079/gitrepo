@@ -40,3 +40,15 @@ swap - partycja wymiany w Linux
 gnom - (skrzat) srodowisko 3.2 ... 
 
 żeby zainstalowac Linuxa dwie partycje - główna, w ktorej montowany jest główny system (programy i jądro) oraz na dane uzytkownika ; trzecia - partycja wymiany 
+
+
+Partycja - obszar dysku wolnego 
+- podstawowa(główne) - używa MBR - moga byc max 4  partycje 
+- logiczne - mozna tworzyc bardzo dużo 
+GPT - standard zapisu informacji o partycjach , pierwszza przyjmuje role 
+
+instalowanie programów w Windows i Linux 
+Windows : 
+formaty instalatorów : 
+- wykonywalne .exe lub .msi 
+- 
