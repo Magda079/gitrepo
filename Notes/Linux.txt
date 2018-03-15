@@ -5,7 +5,7 @@ Creation-Date: 2018-03-12T11:54:37+01:00
 ====== Linux ======
 Created poniedziałek 12 marzec 2018
 
-LINUX (nazwa tylko i wyłącznie jądro systemu) zostaje publicznie usdostępnione w 1993 r. Jądro coś co pośredniczy pomiedzy sprzętem a uzytkownikiem . 
+**LINUX** (nazwa tylko i wyłącznie jądro systemu) zostaje publicznie usdostępnione w 1993 r. Jądro coś co pośredniczy pomiedzy sprzętem a uzytkownikiem . 
 potrzebuje interfejsu aby z tego korzystać. Jeśli do powłoki dołożymy interfejs to dostajemy w miarę kompletny system - dystrybucja.
 W 1993 r pierwsza wersja Steckwere, a nastepnie Debian,Mint.  
 
@@ -13,7 +13,7 @@ W 1993 r pierwsza wersja Steckwere, a nastepnie Debian,Mint.
 2. wyłączyć dźwięk 
 3. PAE/NX
 
-iso - format instalacyjny 
+**iso** - format instalacyjny 
 
 Pliki systemu Windows trafiają  do katalogu Windows (na partycji C)
 w systemie Win programy domyślnie instalowane są w  program files również na dysku C 
@@ -25,10 +25,10 @@ urządzenie/dysk
 
 Systemy plików w każdym systemie  :
 
-Linux obsługuje kazdy system plikow 
+Linux obsługuje __kazdy system plikow__ 
 Windows zainstalowany na ntfs- brak ograniczenia
 
-Dawniej fat jako system plikow oparty na tablicy alokacji. mial duże ograniczenie 
+Dawniej __fat__ jako system plikow oparty na tablicy alokacji. mial duże ograniczenie 
 ext4 - udany system odporny na awarie 
 
 w Windows'ie ważna rzecza systemowa jest plik wymiary (duży plik tworzony w katalogu głownym )
@@ -37,18 +37,34 @@ w Linux'ie  jest możliwośc tworzenia plikow wymiany.
 
 swap - partycja wymiany w Linux 
 
-gnom - (skrzat) srodowisko 3.2 ... 
+gnom - (skrzat) srodowisko 3.2 ... środowisko graficzne w którym posługujemy sie.....
+głównym konkuretnem gnoma jest KDM 
 
 żeby zainstalowac Linuxa dwie partycje - główna, w ktorej montowany jest główny system (programy i jądro) oraz na dane uzytkownika ; trzecia - partycja wymiany 
 
 
-Partycja - obszar dysku wolnego 
-- podstawowa(główne) - używa MBR - moga byc max 4  partycje 
-- logiczne - mozna tworzyc bardzo dużo 
-GPT - standard zapisu informacji o partycjach , pierwszza przyjmuje role 
+**Partycja** - obszar dysku wolnego 
+- **podstawowa(główne)** - używa __MBR__ - moga byc max 4  partycje 
+- **logiczne** - mozna tworzyc bardzo dużo 
+__GPT__ - standard zapisu informacji o partycjach , pierwsza przyjmuje role 
 
 instalowanie programów w Windows i Linux 
 Windows : 
 formaty instalatorów : 
 - wykonywalne .exe lub .msi 
-- 
+
+
+Zasadą projektowania Linuxa jest zasada KISS - zrób to najprościej jak potrafisz 
+
+-Cała konfiguracja systemu Linux jest przechowywana w jednym katalogu  
+-Katalog uzytkownika config
+
+System nie zalezy od uzytkwnika - założenie Microsoft 
+Office działa jako usługa (trzeba pałacić) jednak jest darmowa wersja. 
+
+dock - pasek po lewej stronie 
+
+w linux aby ukryć pliki lub katalog jego nazwę poprzedza się kropką
+crtl + h - pliki ukryte(ukrywaniu/odkrywaniu)
+
+Linux live - dystry
