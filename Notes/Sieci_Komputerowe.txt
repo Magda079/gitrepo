@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T11:59:10+01:00
+
+====== Sieci Komputerowe ======
+Created poniedziałek 19 marzec 2018
+
+**HOST** -  dowolna maszyna uczestnicząca  wywmianie danych lub udostepniająca usługi sieciowe (komputer,telefon itp.)
+
+Rodzaje :
+1.klienci - korzystają z usług
+2.serwery - udostępnia usługi 
+
+Żeby hosty widzialy się w sieci pod wzgledem fizycznym potrzebne sa **switch**. 
+
+**Switch** zapewnia komunikacje urządzeń przypiętych do switch'a (ten kabel nazywa się skrętka).
+
+Skrętka służy do łączenia ze soba hostów i jest zakończona wtyczka - RJ45. 
+ Switch tworzy sieć w topologii gwiazdy. Przekazują sygnały pomiędzy hostami , ale nie zapewnia połączenia między różnymi sieciami, tworzą natomiast sieci lokalne. 
+
+**Router** - najczęściej zawiera wbudowany switch porty switcha oznaczone sa na routerze LAN, router ma gniazda WAN, do którego wpina się kable, aby połaczyć router z innymi urządzeniami. 
+**WAN** - sieć rozległa  komputerowa.
+Suma wszystkich sieci to internet. 
+
+Komunikacja opiera się na sieci szkieletowej 
+Internet składa się z wielu pomnijszych sieci. 
+
+== Żeby urządzenie podłączyć do siedzi musi mieć ==
+
+__Adres IP__ 
+__Domyślna trasa__ (router - przjeście do drugiej sieci)
+pierwsze trzy cyfry adresu IP i Trasy muszą być takie same,a by urządzenia widzialy się 
+Adresy IP w sieci nie moga się powtarzać 
+__Serwer DNS__ - adres urządzenia które zaprewania tłumaczenie nazw na adresy IP
+
+Reguły komunikacji w sieciach internetowych określane są przez protokoły 
+Najważniewjszym protokołem jest **protokuł TCP/IP** - umozliwia komunikację między hostami. 
+ 
+Reguły komunikacji miedzy Hostami : 
+1.DNS -  zamienia adres na IP
+2.HTTP 
+3.FTP - transfer plików 
+4.SFTP - wersja bezpieczna  
+
+Logowanie 
+Uwierzytelnianie 
+Mechanim podwójnego uwierzetylnienia 
