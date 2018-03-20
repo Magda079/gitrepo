@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-20T09:58:15+01:00
+
+====== Model TCP IP ======
+Created wtorek 20 marzec 2018
+DZIAŁAJĄ W WARSTYWACH APLIKACJI
+
+Uproszczony model modelu OSI 
+Stworzony aby pomóc w tworzeniu odpornych na atak sieci komputerowych, potem stał się podstawą struktury internetu. 
+
+Pliki cookie - jeśli nawiązujemy połącznie z serwisem za pomoca przeglądarki 
+
+Protokoły działające  w warstwie aplikacji :  
+ssh
+http
+POP3 - protokuł do odbierania wiadomości pocztowych 
+
+Telmet 
+SMTP
+DNS - system nazw domenowych 
+
+adres DNS www.wikipedia.com
+
+
+adres ULR zaczyna się od **protokołu** (np.http,ssh itp.),(://) następnie **host** (np. www.- oznacza faktyczna nazwę hosta ) **, nazwy domenowe** , które dziela sie na kilka kategorii : krajowa (.pl, .de itp) lub funkcjonalna (.com, .edu .gov , .net internetowe, .aero),
+Oprócz domen najwyższego poziomu są tez poddomeny to nazwy hosta, która nalezy do domeny wyzszego poziomu (np. edu.pl)
+
+baza DNS jest baza rozproszoną - nie ma jednej centalnej bazy danych adresów IP i nazw. 
+DNS opiera się na 13 głównych serwerach, zwanych po ang ROOT-SERVERS (13 komputerów rozmieszczonych na całym świecie). 
+
+Domenami krajowymi w Polsce zarządza **NASK** 
+
+potokoły nie zadzialaja jesli nie skorzystaja z protokołow działających w warstwie transportowej : TCP oraz 

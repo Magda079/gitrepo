@@ -45,3 +45,7 @@ Reguły komunikacji miedzy Hostami :
 Logowanie 
 Uwierzytelnianie 
 Mechanim podwójnego uwierzetylnienia 
+
+
+
+ 
