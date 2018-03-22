@@ -20,8 +20,10 @@ Telmet
 SMTP
 DNS - system nazw domenowych 
 
-adres DNS www.wikipedia.com
 
+===== DNS =====
+
+adres DNS www.wikipedia.com
 
 adres ULR zaczyna się od **protokołu** (np.http,ssh itp.),(://) następnie **host** (np. www.- oznacza faktyczna nazwę hosta ) **, nazwy domenowe** , które dziela sie na kilka kategorii : krajowa (.pl, .de itp) lub funkcjonalna (.com, .edu .gov , .net internetowe, .aero),
 Oprócz domen najwyższego poziomu są tez poddomeny to nazwy hosta, która nalezy do domeny wyzszego poziomu (np. edu.pl)
@@ -31,4 +33,66 @@ DNS opiera się na 13 głównych serwerach, zwanych po ang ROOT-SERVERS (13 komp
 
 Domenami krajowymi w Polsce zarządza **NASK** 
 
-potokoły nie zadzialaja jesli nie skorzystaja z protokołow działających w warstwie transportowej : TCP oraz 
+potokoły nie zadzialaja jesli nie skorzystaja z protokołow działających w warstwie transportowej : TCP oraz UDP
+
+== Warstwa transportowa ==
+TCP - służy do nawiązywania polączeń i jest protokołem który wykorzystywany jest przez wszystykie protokoły warstw wyższych. 
+TCP 
+- jest połączeniowy (tworzy stałe polączenie) tzn że serwer i klient kontrolują za pomocą odpowiednich sum czy kolejne pakiety docieraja do przeznaczenia 
+									__"netstat -t"__
+- stanowy (czyli stany połączenia)
+
+posługują się segmentami 
+port sieciowy jest liczbą naturalna z zakresu od 0 do 65 535 (2^16 - 1)  sa wykorzystywane przez serwer i klientów
+
+**porty jakimi posługują sie :** 
+DNS  53
+FTP 20 ;  21
+HTTP   80 ; 443 (STR ZABEZPIECZONE) 
+SSH 22 
+
+jezeli chce wyswietlic dostepne porty wystarczy ze wyswietle ect/services 
+dany sieci wedruja w paczkach ()
+segment TCP zawiera nr paczki i można składac te paczki w odpowiedniej  kolejności (przychodza do klienta w kolejności losowej )
+Suma kontrolna - kontroluje połączenie 
+
+Protokół TCP jest niezawodny 
+w grach sieciowych nie stosuje się protokołu TCP , poniewaz w przypadku rozgrywek sieciowych TCP by to było opóźnione , dlatego stosuje sie UDP 
+
+UDP 
+jest bezpołączeniowy i zawodny 
+z protokołu UDP korzysta DNS (jest to uproszczony protokół)
+
+==== Warstwa internetowa ====
+odpowiada za wyznaczenie adresu nadawcy i odbiorcy 
+podstawą działania jest protokół IP 
+IP :
+adres ip składa się z 32-bitów dzielone sa na okted (8-bitów) po czym przekształcane do postaci dziesiętnej
+ 
+w systemie Windows jest polecenie "ipconfig [[/all"]] zrobic zrzut (PRACA DOMOWA)
+w adresie IP zakodowane sa 2 informacje 
+1.adres sieci 
+2,.adres komputera tej sieci 
+
+192.168.3.14__/24__ -  maska sieci - mówi ile bitów adresu IP przeznaczony jest na adres sieci (MASKA 16-BITOWA/24-BITOWA gdy zamienia się na 254)
+__192.168.3.__14/24 trzy pierwsze na zapis adresu sieci 
+adres naszej sieci to 192.168.3.0
+hosty od 1 do 254 
+
+jezeli mamy adres sieci 192.168.3.255 to jest to adres __broadcast__ obejmuje wszystkie komputery danej sieci 
+**adres broadcast** jest adresem rozgłoszeniowym 
+
+adresy ip dziela się na lokalne i publiczne.
+LOKALNE : 
+
+	10.0.0.0 - 10.255.255.255 – dla sieci prywatnych dawniej z klasy A (maska zakresu: 255.0.0.0)
+	172.16.0.0 - 172.31.255.255 – dla sieci prywatnych dawniej z klasy B (maska zakresu: 255.240.0.0)
+	192.168.0.0 - 192.168.255.255 – dla sieci prywatnych dawniej z klasy C (maska zakresu: 255.255.0.0)
+nie sa unikalne
+
+Network Adress Tranlation (NAT)  - translacja adresu
+ 
+
+PUBLICZNE 
+musi byc unikalny 
+
