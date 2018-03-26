@@ -88,7 +88,9 @@ LOKALNE :
 	10.0.0.0 - 10.255.255.255 – dla sieci prywatnych dawniej z klasy A (maska zakresu: 255.0.0.0)
 	172.16.0.0 - 172.31.255.255 – dla sieci prywatnych dawniej z klasy B (maska zakresu: 255.240.0.0)
 	192.168.0.0 - 192.168.255.255 – dla sieci prywatnych dawniej z klasy C (maska zakresu: 255.255.0.0)
-nie sa unikalne
+//nie sa unikalne//
+
+DHCP - funkcjonuje w każxdej sieci lokalnej 
 
 Network Adress Tranlation (NAT)  - translacja adresu
  
@@ -96,3 +98,37 @@ Network Adress Tranlation (NAT)  - translacja adresu
 PUBLICZNE 
 musi byc unikalny 
 
+==== Wartwa dostępu do sieci ====
+jest połączeniem z modelu OSI łącze danych + warstwa sieciowa
+
+**Adres MAC -** (karty sieciowe) unikalny adres - zapisywane sa za pomocą cyfr 16-nastkowych 3 pary. 
+Pierwsze trzy pary identyfikuja //producenta// a trzy ostatnie identyfikują  (jest inna w każdym urządzeniu) . 
+Adres MAC mozna powiązać z konkretnym adresem IP
+
+**ARP** - protokół sieciowy. Powiązanie adresu IP z adresem sieciowym. 
+
+ether - połączenie kablowe. 
+
+Warstwa fizyczna : 
+Protokół Ethernet - 
+
+
+Kapsułkowanie danych : 
+do danych dolączane są nagłówki i odwrotnie . 
+  
+**Gniazdo** posiada trzy główne właściwości: 
+* typ gniazda identyfikujący protokół wymiany danych
+* lokalny adres (np. adres IP, IPX, czy Ethernet)
+* opcjonalny lokalny numer portu identyfikujący proces, który wymienia dane przez gniazdo (jeśli typ gniazda pozwala używać portów)
+
+
+== Polecenia do diagnostyki : ==
+
+PING 192.168.3.1 - wysyła pakiety ping i adres IP
+1.protokół  2.adres IP  3.port  4.host (z którym się kontaktuje i port)
+
+**TCPView -** pokazuje polączenia jakie komputer nawiązuje z innymi urządzeniami. (Ile połączen realizuje komputer nawet wtedy gdy sie go nie używa.) 
+**IP addr ; ipconfig /all -** 
+**route -** pokazuje tablice routingu
+**dig** - pozwala sprawdzic konfigurtacje serwera DNS  
+**arp -n**    wyswietla tablice skojarzenie adresu IP z adresami MAc 
