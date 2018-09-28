@@ -12,3 +12,4 @@ to sposób rozwiazywania probelmu za pomocą algorytmów
 składa się z wartości brzegowej,początkowej...
 
 **właściwości algorytmów - **
+ 
