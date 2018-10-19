@@ -65,7 +65,7 @@ def main(args):
     
     for tab in tabele: 
         ile = ile_kolumn(cur, tab) # liczba kolumn w tabeli 
-        dane = czytaj_dane(tab + roz, separator=' ')
+        dane = czytaj_dane(tab + roz, separator=',')
         ile_d = len(dane[0])
         
         if ile > ile_d:
@@ -82,6 +82,8 @@ def main(args):
     #czytaj_dane('nazwiska.txt', ' ')
     #czytaj_dane('dane-osobowe.txt', '\t')
     #czytaj_dane('oceny.txt', ' ')
+    con.commit()
+    con.close()
     return 0
 
 if __name__ == '__main__':

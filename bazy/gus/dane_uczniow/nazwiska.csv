@@ -1,6 +1,5 @@
 Nr_ucz.,Nazwisko,Imie1,Imie2
 9201,Adamczuk,Agata,
-9802,Adamiuk,Marta,
 9202,Adamowicz,Izabela,
 9804,Anchimiuk,Anna,Bogumiła
 9805,Andrejczuk,Zofia,
@@ -9,9 +8,9 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 9811,Bajena,Magdalena,
 9504,Bańska,Marianna,
 9812,Baranowski,Marceli,Piotr
-9211,Bielecka,,Anna,
+9211,Bielecka,Anna,
 9818,Bieluczyk,Magdalena,
-9819,Biernacka,,Marta,
+9819,Biernacka,Marta,
 9824,Boguski,Marcin,
 9217,Bojanowska,Joanna,
 9829,Boryś,Dorota,
@@ -22,7 +21,7 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 9833,Brzozowski,Zdzisław,
 10132,Buza,Patrycja,
 9836,Choromański,Grzegorz,
-9231,Chudecka,,Dominika,
+9231,Chudecka,Dominika,
 9233,Ciereszko,Agnieszka,
 9840,Cybulko,Paweł,
 9234,Cylwik,Edyta,
@@ -33,8 +32,8 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 9848,Dąbrowska,Agnieszka,
 9241,Dojlidko,Emilia,
 9852,Doktór,Marta,
-9854,Drabik,,Robert,
-9856,Duda,,Aleksandra,,
+9854,Drabik,Robert,
+9856,Duda,Aleksandra,
 9858,Dudzińska,Iwona,
 9826,Dworak,Urszula,
 9859,Dworakowski,Maciej,
@@ -65,8 +64,8 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 9891,Husar,Urszula,
 9575,Instyńska,Justyna,
 9892,Iwaniuk,Krzysztof,
-9893,Iwaszczuk,,Agata,
-9894,Iwaszko,,Paweł,
+9893,Iwaszczuk,Agata,
+9894,Iwaszko,Paweł,
 9899,Jarząbek,Katarzyna,
 9901,Jefimiuk,Izabela,
 9802,Jegorow,Krzysztof,
@@ -84,9 +83,9 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 9913,Kasprzak,Mariusz,
 9595,Kawałko,Eliza,
 9916,Kirycki,Mateusz,
-9918,Klima,,Karol,Maciej
+9918,Klima,Karol,Maciej
 9299,Kobeszko,Monika,
-9920,Kochańska,,Ewa,
+9920,Kochańska,Ewa,
 9924,Konończuk,Karolina,Marta
 9605,Konopka,Małgorzata,
 9607,Konopko,Paweł,
@@ -99,12 +98,12 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 9940,Kozlowska,Paula,
 9311,Kozłowska,Agnieszka,
 10133,Krętowska,Ewa,Magdalena
-9941,Krętowski,,Piotr,
+9941,Krętowski,Piotr,
 9943,Krupowicz,Tomasz,
 9614,Kruszewska,Monika,
 9945,Kukowska,Katarzyna,
 9621,Kulikowska,Emilia,
-9327,Kuryga,,Katarzyna,
+9327,Kuryga,Katarzyna,
 9956,Kurzątkowska,Zofia,
 9958,Kużelewska,Aneta,
 9961,Ledowicka,Anna,
@@ -126,7 +125,6 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 9984,Mojsik,Ewa,
 9985,Monieta,Kamil,
 9987,Niemyńska,Karolina,
-9988,Nieścieruk,,Paweł,
 9989,Nijaki,Karol,
 9990,Nowacka,Agata,
 9991,Nowik,Ewa,
@@ -142,7 +140,7 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 9699,Puciłowska,Beata,
 10013,Puciłowski,Michał,Maria
 10015,Raczkowski,Tomasz,
-10016,Radulska,,Anna,
+10016,Radulska,Anna,
 10140,Rakowski,Łukasz,Jakub
 10017,Redyk,Ewa,
 9705,Roman,Monika,
@@ -161,7 +159,7 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 10032,Sadowski,Monika,
 9716,Sakowia,Alina,
 9416,Sawicka,Joanna,
-10035,Semeniuk,,Monika,
+10035,Semeniuk,Monika,
 10067,Siemiończyk,Bartosz,
 9421,Sienkiewicz,Elżbieta,
 10037,Sienkiewicz,Adrianna,
@@ -196,7 +194,7 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 10082,Werpachowska,Olga,
 10093,Wieczorek,Anna,
 10094,Więcko,Katarzyna,
-10096,Wiśniwska,,Urszula,
+10096,Wiśniwska,Urszula,
 10097,Witkowska,Anna,Maria
 10099,Wojda,Zenon,Wojciech
 9473,Wołoszyn,Marta,
@@ -206,8 +204,8 @@ Nr_ucz.,Nazwisko,Imie1,Imie2
 10106,Zakrzewska,Urszula,Sylwia
 9779,Zalewska,Aneta,
 10109,Zaniewska,Emila,
-10110,Zaniewska,,Anita,
-9478,Zawada,,Kamila,
+10110,Zaniewska,Anita,
+9478,Zawada,Kamila,
 10112,Zawadzka,Justyna,
 10114,Zawadzka,Ewa,
 10115,Zawadzka,Anna,Danuta
