@@ -27,7 +27,7 @@ def main(args):
     ### KONFIGURACJA ###
     baza_nazwa = 'uczniowie'
     tabele = ['uczniowie', 'klasy', 'przedmioty', 'oceny']
-    roz = '.txt'
+    roz = '.csv'
     naglowki = True
     ####################
     
