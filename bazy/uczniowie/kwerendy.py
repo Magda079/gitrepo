@@ -6,12 +6,23 @@ import sqlite3
 
 def kwerenda1(cur):
     cur.execute("""
-        SELECT imie, nazwisko, AVG(ocena) AS srednia FROM uczniowie
-        INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
-        GROUP BY id_uczen
-        ORDER BY srednia DESC
-        LIMIT 10  
+    WITH srednie AS (
+       SELECT nazwisko, AVG(ocena), klasa AS srednia FROM uczniowie
+       INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+       INNER JOIN klasy ON uczniowie.id_klasa=klasy.id
+       GROUP BY uczniowie.id
     """)
+    
+        # ~WITH srednie AS (
+            # ~SELECT imie, nazwisko, AVG(ocena) AS srednia FROM uczniowie
+            # ~INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+            # ~GROUP BY id_uczen
+        # ~) SELECT imie, nazwisko, srednia FROM srednie
+          # ~WHERE srednia > 3.8 
+        # SELECT wybierz WITH z tabeli -->> () wybierz ... z srednie
+        # nie można stosować GROUP BY i WHERE razem 
+        # ~ORDER BY srednia DESC
+        # ~LIMIT 10  
         # limit 10 - najlepsi z 10 wyników  DESC malejące ASC rosnące 
         # ~SELECT imie, nazwisko, COUNT(ocena) AS ilu FROM oceny
         # ~INNER JOIN uczniowie ON oceny.id=uczniowie.id_klasa
