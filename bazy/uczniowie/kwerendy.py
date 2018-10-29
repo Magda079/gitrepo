@@ -6,11 +6,17 @@ import sqlite3
 
 def kwerenda1(cur):
     cur.execute("""
-        SELECT klasa, COUNT(nazwisko) AS ilu FROM klasy
-        INNER JOIN uczniowie ON klasy.id=uczniowie.id_klasa
-        GROUP BY klasa
-        ORDER BY ilu DESC
+        SELECT imie, nazwisko, AVG(ocena) AS srednia FROM uczniowie
+        INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
+        GROUP BY id_uczen
+        ORDER BY srednia DESC
+        LIMIT 10  
     """)
+        # limit 10 - najlepsi z 10 wyników  DESC malejące ASC rosnące 
+        # ~SELECT imie, nazwisko, COUNT(ocena) AS ilu FROM oceny
+        # ~INNER JOIN uczniowie ON oceny.id=uczniowie.id_klasa
+        # ~GROUP BY ocena
+        # ~ORDER BY ilu DESC
     #        ORDER BY klasa ASC - sortowanie rekordów
 
      # ~SELECT nazwisko, imie1, dzien, miesiac, rok FROM nazwiska
