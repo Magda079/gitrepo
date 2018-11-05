@@ -11,6 +11,8 @@ def kwerenda1(cur):
        INNER JOIN oceny ON uczniowie.id=oceny.id_uczen
        INNER JOIN klasy ON uczniowie.id_klasa=klasy.id
        GROUP BY uczniowie.id
+       ) SELECT  AVG(srednia), klasa FROM srednie
+         GROUP BY klasa
     """)
     
         # ~WITH srednie AS (
