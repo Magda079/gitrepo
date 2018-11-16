@@ -7,39 +7,42 @@
 import os
 from peewee import *
 
+
 baza_nazwa = 'test.db'
-baza = SqliteDatabase(baza_nazwa) # instancja bazy 
+baza = SqliteDatabase(baza_nazwa)  # instancja bazy
 
 ### MODELE #
+class KlasaBaza(Model):
+    class Meta:
+        database = baza
 
-class Klasa(Model):
+class Klasa(KlasaBaza):
     nazwa = CharField(null=False)
     roknaboru = IntegerField(default=0)
     rokmatury = IntegerField(default=0)
-    class Meta:
-        database = baza
-    
-class Uczen(Model):
+   
+        
+class Uczen(KlasaBaza):
     imie = CharField(null=False)
     nazwisko = CharField(null=False)
     plec = BooleanField()
     klasa = ForeignKeyField(Klasa, related_name='uczniowie')
-    class Meta:
-        database = baza
     
-class Wynik(Model):
+        
+class Wynik(KlasaBaza):
     egzhum = FloatField(default=0)
     egzmat = FloatField(default=0)
     egzjez = FloatField(default=0)
     uczen = ForeignKeyField(Uczen, related_name='wyniki')
-    class Meta:
-        database = baza    
-
+    
+        
 def main(args):
+    
     if os.path.exists(baza_nazwa):
-        od.remove(baza_nazwa)
-    baza.connect() #połączenie z bazą
-    baza.create_tables([Klasa, Uczen, Wynik])
+        os.remove(baza_nazwa)
+    baza.connect()  # połączenie z bazą
+    baza.create_tables([Klasa, Uczen, Wynik])   #mapowanie ORM (odwzorować)
+    
     return 0
 
 if __name__ == '__main__':
