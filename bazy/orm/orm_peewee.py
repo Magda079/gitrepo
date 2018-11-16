@@ -43,6 +43,23 @@ def main(args):
     baza.connect()  # połączenie z bazą
     baza.create_tables([Klasa, Uczen, Wynik])   #mapowanie ORM (odwzorować)
     
+    kl3A = Klasa(nazwa='3A', roknaboru=2010, rokmatury=2013)
+    kl3A.save() #zapisanie obiektu w bazie 
+    kl1A = Klasa(nazwa='1A', roknaboru=2009, rokmatury=2012)
+    kl1A.save()
+    
+    u1 = Uczen(imie='Michał', nazwisko='Wołodyjowski', plec=False, klasa=kl3A)
+    u1.save()
+    u2 = Uczen(imie='Anna', nazwisko='Gacek', plec=True, klasa=kl1A)
+    u2.save()
+    u3 = Uczen(imie='Jan', nazwisko='Zioło', plec=False, klasa=kl1A)
+    u3.save()
+    
+    #zapytania czyli kwerendy w orm
+    uczniowie = Uczen.select()
+    for u in uczniowie:
+        print(u.id, u.nazwisko, u.klasa.nazwa)
+    
     return 0
 
 if __name__ == '__main__':
