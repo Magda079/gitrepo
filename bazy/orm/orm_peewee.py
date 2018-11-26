@@ -59,6 +59,11 @@ def main(args):
     uczniowie = Uczen.select()
     for u in uczniowie:
         print(u.id, u.nazwisko, u.klasa.nazwa)
+        
+    klasy = Klasa.select()
+    for k in klasy:
+        for u in k.uczniowie:
+            print(u.nazwisko)
     
     return 0
 

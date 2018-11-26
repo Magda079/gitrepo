@@ -5,46 +5,26 @@
 #  
 
 import os
-from peewee import *
+from uczniowie_model import * 
 
-
-baza_nazwa = 'test.db'
-baza = SqliteDatabase(baza_nazwa)  # instancja bazy
-
-### MODELE #
-class KlasaBaza(Model):
-    class Meta:
-        database = baza
-
-
-class Klasa(KlasaBaza):
-    klasa = CharField(null=False)
-    roknaboru = IntegerField(default=0)
-    rokmatury = IntegerField(default=0)
-
-class Uczen(KlasaBaza):
-    imie = CharField(null=False)
-    nazwisko = CharField(null=False)
-    plec = BooleanField()
-    egzhum = FloatField(default=0)
-    egzmat = FloatField(default=0)
-    egzjez = FloatField(default=0)
-    klasa = ForeignKeyField(Klasa)
-   
-            
-class Przedmiot(KlasaBaza):
-    przedmiot = CharField(null=False)
-    imie_naucz = CharField(null=False)
-    nazwisko_naucz = CharField(null=False)
-    plec_naucz = BooleanField()
+def czy_jest(plik):
+    if not os.path.isfile(plik):
+        print("Plik {} nie istnieje!".format(plik))
+        return False
+    return True
     
+def czytaj_dane(plik, separator=","):
+    dane = []  # pusta lista na rekordy
     
-class Ocena(KlasaBaza):
-    datad = DateField(null=False)
-    ocena = FloatField(default=0)
-    przedmiot = ForeignKeyField(Przedmiot, related_name='oceny')
-    przedmiot = ForeignKeyField(Uczen, related_name='oceny')
+    if not czy_jest(plik):
+        return dane
     
+    with open(plik, newline='', encoding='utf-8') as plikcsv:
+        tresc = csv.reader(plikcsv, delimiter=separator, skipinitialspace=True)
+        for rekord in tresc:
+            dane.append(rekord)
+    
+    return dane
         
 def main(args):
     
