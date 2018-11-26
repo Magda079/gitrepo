@@ -25,6 +25,10 @@ def czytaj_dane(plik, separator=","):
             dane.append(rekord)
     
     return dane
+    
+def dodaj_dane(dane):
+    for model, plik in dane.items():
+        print(model._meta.fields)
         
 def main(args):
     
@@ -32,6 +36,20 @@ def main(args):
         os.remove(baza_nazwa)
     baza.connect()  # połączenie z bazą
     baza.create_tables([Klasa, Uczen, Przedmiot, Ocena])   #mapowanie ORM (odwzorować)
+    
+    dane = {
+        Klasa: 'klasy',
+        Uczen: 'uczniowie',
+        Przedmiot: 'przedmioty',
+        Ocena: 'oceny'
+    
+    }
+    
+    
+    dodaj_dane(dane)
+    
+    baza.commit()
+    baza.close()
     
     return 0
 
