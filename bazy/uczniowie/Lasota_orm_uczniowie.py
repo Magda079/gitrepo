@@ -6,6 +6,7 @@
 
 import os
 from uczniowie_model import * 
+import csv
 
 def czy_jest(plik):
     if not os.path.isfile(plik):
@@ -22,13 +23,19 @@ def czytaj_dane(plik, separator=","):
     with open(plik, newline='', encoding='utf-8') as plikcsv:
         tresc = csv.reader(plikcsv, delimiter=separator, skipinitialspace=True)
         for rekord in tresc:
-            dane.append(rekord)
+            dane.append(tuple(rekord))
     
     return dane
     
 def dodaj_dane(dane):
     for model, plik in dane.items():
-        print(model._meta.fields)
+        pola = [pole for pole in model._meta.fields]
+        pola.pop(0) # usunięcie pola id
+        print(pola)
+        
+        wpisy = czytaj_dane(plik + '.csv')
+        model.insert_many(wpisy, fields=pola).execute()
+
         
 def main(args):
     
