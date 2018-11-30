@@ -5,7 +5,7 @@
 #  
 
 import os
-from uczniowie_model import * 
+from uczniowie_model import *
 import csv
 
 def czy_jest(plik):
@@ -13,7 +13,8 @@ def czy_jest(plik):
         print("Plik {} nie istnieje!".format(plik))
         return False
     return True
-    
+
+
 def czytaj_dane(plik, separator=","):
     dane = []  # pusta lista na rekordy
     
@@ -26,38 +27,37 @@ def czytaj_dane(plik, separator=","):
             dane.append(tuple(rekord))
     
     return dane
-    
+
+
 def dodaj_dane(dane):
     for model, plik in dane.items():
         pola = [pole for pole in model._meta.fields]
-        pola.pop(0) # usunięcie pola id
+        pola.pop(0)  # usuniÄcie pola id
         print(pola)
         
         wpisy = czytaj_dane(plik + '.csv')
+        
         model.insert_many(wpisy, fields=pola).execute()
 
-        
+
 def main(args):
-    
     if os.path.exists(baza_nazwa):
         os.remove(baza_nazwa)
-    baza.connect()  # połączenie z bazą
-    baza.create_tables([Klasa, Uczen, Przedmiot, Ocena])   #mapowanie ORM (odwzorować)
-    
+    baza.connect()  # poĹÄczenie z bazÄ
+    baza.create_tables([Klasa, Uczen, Przedmiot, Ocena])
+
     dane = {
         Klasa: 'klasy',
         Uczen: 'uczniowie',
         Przedmiot: 'przedmioty',
         Ocena: 'oceny'
-    
     }
-    
-    
+
     dodaj_dane(dane)
-    
+
     baza.commit()
     baza.close()
-    
+
     return 0
 
 if __name__ == '__main__':

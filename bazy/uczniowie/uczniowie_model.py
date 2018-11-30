@@ -4,40 +4,36 @@
 
 from peewee import *
 
-
 baza_nazwa = 'test.db'
 baza = SqliteDatabase(baza_nazwa)  # instancja bazy
 
 ### MODELE #
-class KlasaBaza(Model):
+class BazaModel(Model):
     class Meta:
         database = baza
 
-
-class Klasa(KlasaBaza):
+class Klasa(BazaModel):
     klasa = CharField(null=False)
-    roknaboru = IntegerField(default=0)
-    rokmatury = IntegerField(default=0)
+    rok_naboru = IntegerField(default=0)
+    rok_matury = IntegerField(default=0)
 
-class Uczen(KlasaBaza):
+class Uczen(BazaModel):
     imie = CharField(null=False)
     nazwisko = CharField(null=False)
-    plec = BooleanField()
-    egzhum = FloatField(default=0)
-    egzmat = FloatField(default=0)
-    egzjez = FloatField(default=0)
-    klasa = ForeignKeyField(Klasa)
-   
-            
-class Przedmiot(KlasaBaza):
+    plec = IntegerField()
+    klasa = ForeignKeyField(Klasa, related_name='uczniowie')
+    egz_hum = DecimalField(default=0)
+    egz_mat = DecimalField(default=0)
+    egz_jez = DecimalField(default=0)
+
+class Przedmiot(BazaModel):
     przedmiot = CharField(null=False)
     imie_naucz = CharField(null=False)
     nazwisko_naucz = CharField(null=False)
-    plec_naucz = BooleanField()
+    plec_naucz = IntegerField()
     
-    
-class Ocena(KlasaBaza):
-    datad = DateField(null=False)
-    ocena = FloatField(default=0)
+class Ocena(BazaModel):
+    datad = DateField()
+    uczen = ForeignKeyField(Uczen, related_name='oceny')
     przedmiot = ForeignKeyField(Przedmiot, related_name='oceny')
-    przedmiot = ForeignKeyField(Uczen, related_name='oceny')
+    ocena = DecimalField(null=False)
