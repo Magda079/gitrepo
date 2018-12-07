@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-12-07T12:02:00+01:00
+
+====== xd ======
+Created piątek 07 grudnia 2018
+
+HTTP**S**  -  protokół **S**
+HTML - język 
+css - zeby okreslic wyglad strony 
+[[Java Script]]
+**www**.__onet.pl__ -  **nazwa serwera** i __domena__  - pełna nazwa serwera 
+/ - katalog główny serwera , domyślny zasób serwera 
+
+

@@ -1,0 +1,12 @@
+https://www.google.pl/
+search
+?
+source=hp&
+ei=h1cKXMTcNofTkwXey5OgDA&
+q=http&btnK=Szukaj+w+Google
+&oq=http
+&gs_l=psy-ab.3..0l2j0i131j0l2j0i131l2j0l3.2716.3354..3712...0.0..0.98.373.4......0....1..gws-wiz.....0.4hr2VQshI0Q
+
+Metody HTTP : 
+1. GET – pobranie zasobu wskazanego przez URI, może mieć postać warunkową jeśli w nagłówku występują pola warunkowe takie jak "If-Modified-Since"
+2. POST – przyjęcie danych przesyłanych od klienta do serwera (np. wysyłanie zawartości formularzy)
