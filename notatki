@@ -10,3 +10,5 @@ q=http&btnK=Szukaj+w+Google
 Metody HTTP : 
 1. GET – pobranie zasobu wskazanego przez URI, może mieć postać warunkową jeśli w nagłówku występują pola warunkowe takie jak "If-Modified-Since"
 2. POST – przyjęcie danych przesyłanych od klienta do serwera (np. wysyłanie zawartości formularzy)
+
+127.0.0.1 - adres lokalny , pod którym komputer widzi samego siebie 
