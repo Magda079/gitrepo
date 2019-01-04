@@ -6,9 +6,9 @@
 
 <head>
 <meta charset="utf-8" />
-    <title>Aplikacja QUIZ </title>
+    <title>Aplikacja QUIZ - lista pytań</title>
     <style type="text/css">
-        #menu li { display: inline; margin-left: lem;}
+        #menu li { display: inline; margin_left: lem;}
     </style>
 </head>
 
@@ -17,12 +17,15 @@
         <li><a href="{{ url_for('hello') }}">Strona główna</a></li>
         <li><a href="{{ url_for('lista') }}">Lista</a></li>
         <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
-    
     </ul>
     
+    <h1>Aplikacja QUIZ - lista pytań</h1>
     
-    <h1>Aplikacja QUIZ</h1>
-    <p>Pytania i odpowiedzi</p>
+    <ol>
+    {% for p in pytania %}
+        <li>{{ p.pytanie }}</li>
+    {% endfor %}
+    </ol>
 
 </body>
 </html>

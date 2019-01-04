@@ -13,8 +13,8 @@ def hello():
     # return "Hello World!"
     return render_template('index.html')
 
-@app.route("/strona")
-def strona():
+@app.route("/lista")
+def lista():
     return "<h1>Witaj na serwerze</h1><h2>Aplikacja Quiz</h2>"
 
 @app.route("/klasa")
