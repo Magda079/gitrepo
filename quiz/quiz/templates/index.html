@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html lang="pl">
-<!--
-   templates/index.html
--->
-
-<head>
-<meta charset="utf-8" />
-    <title>Aplikacja QUIZ </title>
-    <style type="text/css">
-        #menu li { display: inline; margin-left: lem;}
-    </style>
-</head>
-
-<body>
-    <ul id="menu">
-        <li><a href="{{ url_for('hello') }}">Strona główna</a></li>
-        <li><a href="{{ url_for('lista') }}">Lista</a></li>
-        <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+{% extends "szablon.html" %}
+{% block tytul %}Aplikacja QUIZ{% endblock %}
+{% block h1 %}Aplikacja QUIZ{% endblock %}
+{% block tresc %}<p>Pytania i odpowiedzi</p>{% endblock %}
     
-    </ul>
-    
-    
-    <h1>Aplikacja QUIZ</h1>
-    <p>Pytania i odpowiedzi</p>
-
-</body>
-</html>
