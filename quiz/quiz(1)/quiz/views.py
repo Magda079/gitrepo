@@ -90,6 +90,12 @@ def page_not_found(e):
 @app.route("/usun/<int:pid>", methods=['GET', 'POST'])
 def usun(pid):
     p = get_or_404(pid)
-    
-    
+    if request.method == "POST":
+        flash("Usunięto pytanie: {}".format(p.pytanie))
+        for o in Odpowiedz.select().where(Odpowiedz.pytanie == p.id):
+            o.delete_instance()
+        p.delete_instance()
+        return redirect(url_for('lista'))
+            
+            
     return render_template('usun.html', pytanie=p)
