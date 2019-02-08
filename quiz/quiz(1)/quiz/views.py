@@ -99,3 +99,30 @@ def usun(pid):
             
             
     return render_template('usun.html', pytanie=p)
+    
+    
+@app.route("/edytuj/<int:pid>", methods=['GET', 'POST'])
+def edytuj(pid):
+    p = get_or_404(pid)
+    form = DodajForm(obj=p)
+    form.kategoria.choices = [(k.id, k.kategoria) for k in Kategoria.select()]
+    form.kategoria.data = p.kategoria.id
+    
+    if form.validate_on_submit():
+        p.save()
+        for o in form.odpowiedzi.data:
+            odp.save()
+        flash("Dodano pytanie: {}".format(form.pytanie.data))
+        return redirect(url_for('lista'))
+        
+        
+    elif request.method == 'POST':
+        flash_errors(form)
+        
+    odpowiedzi = []
+    for o in Odpowiedz.select().where(Odpowiedz.pytanie == p.id).dicts():
+        odpowiedzi.append(o)
+    form.odpowiedzi(data=odpowiedzi)
+
+    
+    return render_template('edytuj.html', form=form)
