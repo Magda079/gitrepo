@@ -5,6 +5,7 @@
 
 from flask import Flask
 from flask import render_template, request, flash, redirect, url_for
+from flask import abort
 from modele import Kategoria, Pytanie, Odpowiedz
 from forms import *
 
@@ -57,7 +58,7 @@ def dodaj():
     form.kategoria.choices = [(k.id, k.kategoria) for k in Kategoria.select()]
     
     if form.validate_on_submit():
-        p = Pytanie(pytanie=form.pytanie.data, kategoria=form.kategoria.date)
+        p = Pytanie(pytanie=form.pytanie.data, kategoria=form.kategoria.data)
         p.save()
         for o in form.odpowiedzi.data:
             odp = Odpowiedz(odpowiedz=o['odpowiedz'],
@@ -70,3 +71,25 @@ def dodaj():
         flash_errors(form)
     
     return render_template('dodaj.html', form=form)
+
+
+def get_or_404(pid):
+    try:
+        p = Pytanie.get_by_id(pid)
+        return p
+    except Pytanie.DoesNotExist:
+        abort(404)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
+
+@app.route("/usun/<int:pid>", methods=['GET', 'POST'])
+def usun(pid):
+    p = get_or_404(pid)
+    
+    
+    return render_template('usun.html', pytanie=p)
