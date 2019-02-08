@@ -109,8 +109,13 @@ def edytuj(pid):
     form.kategoria.data = p.kategoria.id
     
     if form.validate_on_submit():
+        p.pytanie = form.pytanie.data
+        p.kategoria = form.kategoria.data
         p.save()
         for o in form.odpowiedzi.data:
+            odp = Odpowiedz.select().get_by_id(o['id'])
+            odp.odpowiedz = o['odpowiedz']
+            odp.odpok = int(o['odpok'])
             odp.save()
         flash("Dodano pytanie: {}".format(form.pytanie.data))
         return redirect(url_for('lista'))
