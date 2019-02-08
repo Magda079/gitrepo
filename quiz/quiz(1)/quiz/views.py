@@ -113,11 +113,11 @@ def edytuj(pid):
         p.kategoria = form.kategoria.data
         p.save()
         for o in form.odpowiedzi.data:
-            odp = Odpowiedz.select().get_by_id(o['id'])
+            odp = Odpowiedz.get_by_id(o['id'])
             odp.odpowiedz = o['odpowiedz']
             odp.odpok = int(o['odpok'])
             odp.save()
-        flash("Dodano pytanie: {}".format(form.pytanie.data))
+        flash("Zaktualizowano pytanie: {}".format(form.pytanie.data))
         return redirect(url_for('lista'))
         
         
