@@ -14,16 +14,12 @@ using namespace std;
 struct punkt{
     int x;
     int y;
-}
+};
 
 struct wektor{
     punkt pp;
     punkt pk; 
-}
-
-wektor wl;
-wl.pk.y
-wl.pk.x
+};
 
 punkt wylicz_srodek(wektor w){
         ;
