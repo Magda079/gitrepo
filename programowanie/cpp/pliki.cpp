@@ -35,7 +35,7 @@ void zmienNazwe2(char t1[], char t2[]){
     strncpy(wsk, ".bak", 4);
 }
 
-int liczZnaki(char nazwa[]) {
+int liczZnaki(char nazwa[]){
     char kopia[15];
     zmienNazwe2(nazwa, kopia);
     cout << kopia << endl;
@@ -60,13 +60,15 @@ int liczZnaki(char nazwa[]) {
             ilealnum++;
             wyjscie.put(znak); // zapisanie znaku do pliku
         }
+        if ((int)znak == 10)
+            wyjscie.put('\n');
     }
     
     wejscie.close(); wyjscie.close();
     cout << "Znaków:" << ile << endl;
     cout << "Liter: " << ileal << endl;
     cout << "Cyfr:" << ilenum << endl;
-    
+    return ile;
 }
 
 
