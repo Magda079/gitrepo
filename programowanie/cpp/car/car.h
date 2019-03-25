@@ -20,5 +20,7 @@ class Car {
         Car(string, string, int, int); // konstruktor
         void dodaj();
         void dane();
+        void laduj(ile);
+        void pasazerowie();
 };
 #endif

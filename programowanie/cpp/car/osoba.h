@@ -1,4 +1,4 @@
-// car.h
+// osoba.h
 #include <iostream>
 #include <cstdlib>
 
